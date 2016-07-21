@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>Web App - List</strong>
+      <div class="pull-right">
+        <a (click)="create()"><span class="glyphicon glyphicon-plus"></span></a>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let person of personList">{{person.firstName}} {{person.lastName}}</li>
+    </ul>
+  </div>
+</div>
